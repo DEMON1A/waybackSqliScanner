@@ -36,8 +36,11 @@ class sqliWaybackClass():
             self.q.task_done()
 
     def run(self,domain):
-
-        self.getWaybackUrls(domain)
+        try:
+            URLsContent = open(domain, 'r').readlines()
+            self.urls = URLsContent
+        except Exception:
+            self.getWaybackUrls(domain)
 
         #Spin up workers
         for i in range(50):
