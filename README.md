@@ -8,7 +8,7 @@
 ```
 git clone https://github.com/DEMON1A/waybackSqliScanner
 cd waybackSqliScanner/
-python3 main.py [DOMAIN]
+python3 main.py [DOMAIN]/[FILE_PATH]
 ```
 
 ## Wanna Test It? - Where Were The Error?
